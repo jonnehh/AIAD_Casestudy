@@ -1,0 +1,23 @@
+titanic_data_train:
+  type: pandas.CSVDataset
+  filepath: data/01_original_data/train.csv
+
+titanic_data_test:
+  type: pandas.CSVDataset
+  filepath: data/01_original_data/test.csv
+
+training_data:
+  type: pandas.CSVDataset
+  filepath: data/02_processed_data/training_data.csv
+  save_args:
+    index: False
+
+test_data:
+  type: pandas.CSVDataset
+  filepath: data/02_processed_data/test_data.csv
+  save_args:
+    index: False
+
+
+
+
